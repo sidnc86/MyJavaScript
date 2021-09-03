@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing form fields with aria-hidden="true" & display:none</title>
+		<style>
+			.button {
+				background-color: skyblue;
+				color: black;
+			}
+		</style>
+			<script src="../js/ShowHideButton.js"></script>
+	</head>
+	
+	<body>
+		<main>
+			<h1>Testing aria-describedby with aria-hidden="true" & display:none</h1>
+			<span id="btn" class="button" onclick='hideForm("btn", "form")' role="button" tabindex="0" aria-expanded="true">Hide Form</span>
+			
+			<form id="form">
+				<h2>aria-describedby with aria-hidden="true" attribute</h2>
+				<label for="id1">Name:</label><br>
+				<span id="d1" aria-hidden="true">Enter your full name<br></span>
+				<input type="text" id="id1" aria-describedby="d1"><br>
+				
+				<h2>aria-describedby with style="display: none" attribute</h2>
+				<label for="id2">E-mail:</label><br>
+				<span id="d2" style="display: none;">Enter Your Valid Email address<br></span>
+				<input type="text" id="id2" aria-describedby="d2"><br>
+				
+				<input type="submit" class="button">
+			</form>
+	</main>
+		
+</main>
+	</body>
+</html>
