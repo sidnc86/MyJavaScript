@@ -1,0 +1,49 @@
+body {
+	background-color: #d0e1f9;
+	font-size: 130%;
+}
+
+main {
+	width: 40%;
+	hight: auto;
+	padding: 5% 20% 10% 30%;
+}
+
+div {
+	display: block;
+	padding: 2% 7% 5% 4%;
+	background-color: white;
+	border: 5px double #0F0FFF;
+}
+
+form {
+	padding: 0% 0% 0% 5%;
+}
+
+h1 {
+	font-size: 350%;
+	padding: 5% 5% 2% 5%;
+	color: #000080;
+}
+
+p {
+	padding: 0% 1% 1% 0%;
+	font-size: 150%;
+}
+
+label {
+	padding: 1% 0% 0% 1%;
+	font-size: 120%;
+}
+
+a {
+	display: inline-block;
+	font-size: 115%;
+	padding: 4% 0% 4% 5%;
+}
+
+button {
+	font-size: 130%;
+	background-color: #051e3e;
+	color: white;
+}
