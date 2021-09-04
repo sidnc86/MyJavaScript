@@ -15,6 +15,6 @@ var password = document.getElementById(pass).value;
 	else {
 		document.getElementById(error).removeAttribute("role", "alert");
 		document.getElementById(error).setAttribute("role", "alert");
-		document.getElementById(error).innerHTML = "Please enter the details for required fields which are marked with *";
+		document.getElementById(error).innerHTML = "Please enter the details for required fields which are marked using *";
 	}
 }
