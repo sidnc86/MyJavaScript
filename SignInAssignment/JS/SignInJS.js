@@ -16,5 +16,7 @@ var password = document.getElementById(pass).value;
 		document.getElementById(error).removeAttribute("role", "alert");
 		document.getElementById(error).setAttribute("role", "alert");
 		document.getElementById(error).innerHTML = "Please enter the details for required fields which are marked using *";
+		document.getElementById(error).setAttribute("tabindex", "-1");
+		document.getElementById(error).focus();
 	}
 }
