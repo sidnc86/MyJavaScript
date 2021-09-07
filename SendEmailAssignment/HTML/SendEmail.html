@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Send E-mail</title>
+	<link rel="stylesheet" href="../css/SignUpCss.css">
+	<script src="../JS/SendEmailAssignment.js"></script>
+</head>
+
+<body>
+	<main>
+		<div id="frontpage">
+			<section id="form">
+				<p id="error"></p>
+				<label>To: 
+					<input type="email" id="to" name="to" autofocus required><br>
+				</label>
+
+				<label>Subject: 
+					<input type="text" id="subject" name="subject" required><br>
+				</label>
+
+
+				<div id="file"><span>
+					<input type="file"><br>
+					<button onclick='appendAttachments()'>Attach More Files</button>
+				</span><br></div>
+
+				<label>Message: 
+					<textarea id="message" required></textarea>
+				</label>
+
+			</section>
+			<button class="btn" onclick='sentMail("frontpage", "backpage", "to", "subject", "message", "heading", "details", "messagedetails", "error")'>Send</button>
+		</div>
+
+		<div id="backpage" style="display: none;">
+			<h1 id="heading"></h1>
+			<strong id="details"></strong>
+			<p id="messagedetails"></p>
+			<button class="btn" onclick='sendAnotherMail("frontpage", "backpage")'>Send another e-mail</button>
+		</div>
+	</main>
+</body>
+</html>
