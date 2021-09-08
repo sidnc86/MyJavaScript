@@ -22,7 +22,7 @@ form {
 
 h1 {
 	font-size: 350%;
-	padding: 5% 5% 2% 5%;
+	padding: 2% 5% 2% 5%;
 	color: #000080;
 }
 
@@ -46,4 +46,8 @@ button {
 	font-size: 130%;
 	background-color: #051e3e;
 	color: white;
+}
+
+input {
+	margin: 1% 0% 2% 1%;
 }

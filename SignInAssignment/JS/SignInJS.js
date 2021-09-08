@@ -20,3 +20,20 @@ var password = document.getElementById(pass).value;
 		document.getElementById(error).focus();
 	}
 }
+
+
+
+
+function darkMode(btn)
+{
+	let btnName = document.getElementById(btn).innerHTML;
+	if (btnName == "Enable Dark Mode")
+	{
+		document.getElementById(btn).innerHTML = "Disable Dark Mode";
+		document.querySelectorAll('*').forEach((e)=>e.setAttribute('style', 'background-color: black; color: white;'));
+	}
+	else {
+		document.getElementById(btn).innerHTML = "Enable Dark Mode";
+		document.querySelectorAll('*').forEach((e)=>e.removeAttribute('style'));
+	}
+}
