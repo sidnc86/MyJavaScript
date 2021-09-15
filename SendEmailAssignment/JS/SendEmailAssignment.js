@@ -32,7 +32,7 @@ function sendAnotherMail(frontPage, backPage)
 
 function appendAttachments()
 {
-	let attachment = '<span><input type="file"><br><button onclick="appendAttachments()">Attach More Files</button><br></span>';
+	let attachment = '<span><input type="file"><br><br></span>';
 	document.getElementById("file").innerHTML += attachment;
 	
 }
